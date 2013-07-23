@@ -49,97 +49,55 @@
 % the second argument is the url displayed in the template
 % This allows special characters to be displayed such as the tilde in this example
 \email{taylorsmck@gmail.com}
-% \homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith}
+\homepage{https://github.com/taylormck}{github.com/taylormck}
 % \extrainfo{additional information}
 
-%----------------------------------------------------------------------------------------
+% --- begin doc ---
 
 \begin{document}
 
 \makecvtitle % Print the CV title
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+% --- education ---
 
 \section{Education}
 
 % Arguments not required can be left empty
-\cventry{2008-2013}{Bachelor of Science in Computer Science}{The University of Texas}{Austin}{}{fdsa}
+\cventry{2008-2013}{Bachelor of Science in Computer Science}{The University of Texas}{Austin}{}{}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+% --- work experience ---
 
 % \section{Experience}
-% \subsection{Vocational}
-% \subsection{Miscellaneous}
 % \cventry{2010--2011}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
 
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%----------------------------------------------------------------------------------------
+% --- computer skills ---
 
 \section{Computer Skills}
 
 \subsection{Programming Languages}
-\cvitem{Very Familiar}{\textsc{C}, \textsc{C++}, \textsc{java}, \textsc{Python}, \textsc{SQL}}
-\cvitem{Familiar}{\textsc{html}, \textsc{css}, \textsc{javascript}, \textsc{XML}, \textsc{JSON}, \textsc{Lisp}}
+\cvitem{Very Familiar}{\textsc{c}, \textsc{c++}, \textsc{java}, \textsc{python}, \textsc{sql}}
+\cvitem{Familiar}{\textsc{html}, \textsc{css}, \textsc{javascript}, \textsc{xml}, \textsc{json}, \textsc{lisp}}
 
 \subsection{Libraries and Tools}
-\cvitem{Familiar}{\textsc{Django}, \LaTeX, \textsc{AndEngine}}
+\cvitem{Familiar}{\textsc{Django}, \textsc{LaTeX}, \textsc{AndEngine}, \textsc{Bootstrap}, \textsc{Ogre3D}, \textsc{Bullet}, \textsc{RakNet}}
 
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
+% --- projects ---
+\section{Projects}
 
-\section{Communication Skills}
+\subsection{Racquet}
+\cvitem{}{Designed a 3D game using Ogre3D, Bullet Physics Library, and RakNet networking library}
 
-\cvitem{2010}{Oral Presentation at the California Business Conference}
-\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+\subsection{Motion Capture Viewer}
+\cvitem{}{Created a viewer to display \textsc{bvh} data in real time}
 
-%----------------------------------------------------------------------------------------
-%	LANGUAGES SECTION
-%----------------------------------------------------------------------------------------
+\subsection{Model Viewer}
+\cvitem{}{Implemented a 3D object viewer to view 3D \textsc{obj} objects}
 
-\section{Languages}
+\subsection{Paddletronic Duel}
+\cvitem{}{Developed AI system for computer opponents}
 
-\cvitemwithcomment{English}{Mothertongue}{}
-\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
-\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+\subsection{World Crisis Database}
+\cvitem{}{Created a website using \textsc{Django} and \textsc{Bootstrap} to act as a public database for world crises}
 
-%----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Interests}
-
-\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-
-\cvlistdoubleitem{Piano}{Chess}
-\cvlistdoubleitem{Cooking}{Dancing}
-\cvlistitem{Running}
-
-%----------------------------------------------------------------------------------------
-%	COVER LETTER
-%----------------------------------------------------------------------------------------
-
-% To remove the cover letter, comment out this entire block
-
-\clearpage
-
-\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-\date{\today} % Letter date
-\opening{Dear Sir or Madam,} % Opening greeting
-\closing{Sincerely yours,} % Closing phrase
-\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
-
-\makelettertitle % Print letter title
-
-\lipsum[1-3] % Dummy text
-
-\makeletterclosing % Print letter signature
-
-%----------------------------------------------------------------------------------------
-
+% --- end document ---
 \end{document}
