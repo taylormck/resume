@@ -11,10 +11,10 @@ https://github.com/taylormck/resume
 
 Education
 ---------
-The University of Texas at Austin
-Bachelor of Science in Computer Science
-2008-2013
-Graduating in August 2013
+The University of Texas at Austin  
+Bachelor of Science in Computer Science  
+2008-2013  
+Graduating in August 2013  
 
 Computer Skills
 ---------------
