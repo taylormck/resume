@@ -4,10 +4,10 @@ My resume, made in LaTeX
 
 Contact Info
 ------------
-Taylor McKinney
-+1 210 394 0670
-taylorsmck@gmail.com
-https://github.com/taylormck/resume
+Taylor McKinney  
++1 210 394 0670  
+taylorsmck@gmail.com  
+https://github.com/taylormck/resume  
 
 Education
 ---------
