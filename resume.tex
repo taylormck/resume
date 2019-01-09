@@ -13,8 +13,8 @@
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
 % used for structuring the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -32,6 +32,7 @@
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 
+\usepackage{anyfontsize}
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
@@ -45,13 +46,13 @@
 
 % All information in this block is optional, comment out any lines you don't need
 % \title{}
-\address{1300 South Pleasant Valley}{Austin, Texas 78741}
-\mobile{(210) 394 0670}
+\address{2601 Esperanza Crossing}{Austin, Texas 78758}
+\mobile{+1-512-817-9975}
 % The first argument is the url for the clickable link,
 % the second argument is the url displayed in the template
 % This allows special characters to be displayed such as the tilde in this example
 \email{taylorsmck@gmail.com}
-\homepage{https://github.com/taylormck}{github.com/taylormck}
+% \homepage{url}{text}
 % \extrainfo{additional information}
 
 % --- begin doc ---
@@ -60,52 +61,39 @@
 
 \makecvtitle % Print the CV title
 
-% --- education ---
+% --- work experience ---
+
+\section{Experience}
+\cventry{2013--Present}{Bazaarvoice}{Senior Software Engineer - Front End}{Austin}{}{}
+
+\cvlistitem
+{Immediately went to work on a display application that serves over 400 million unique global visitors daily. Developed skills to deliver quickly and carefully on large-scale applications.}
+
+\cvlistitem
+{Overhauled accessibility, greatly improving user experience and protecting clients from legal action. Gained experience with working across teams to understand and meet strict legal requirements.}
+
+\cvlistitem
+{Refactored build system to quickly handle bursts of hundreds of build messages, along with improved monitoring and error handling. Refined ability to tackle large projects.}
+
+\cvlistitem
+{Took charge of CSAT for display applications. Developed new company processes to quickly triage CSAT tickets and route them appropriately and quickly. Gained valuable experience working with support teams and with clients directly to solve problems as quickly and cleanly as possible.}
+
+\cvlistitem
+{Trained full team of new engineers around the globe to maintain the primary display application. Developed my skills as a team leader and gained unique experience in working with teams in separate time zones around the world.}
 
 \section{Education}
 
-% Arguments not required can be left empty
-\cventry{2008-2013}{Bachelor of Science in Computer Science}{The University of Texas}{Austin}{}{Graduating August, 2013}
+\cventry{2008-2013}{Bachelor of Science in Computer Science}{The University of Texas}{Austin}{}{2013}
 
-% --- work experience ---
 
-% \section{Experience}
-% \cventry{2010--2011}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}
-%		{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+% --- skills ---
 
-% --- computer skills ---
+\section{Skills}
 
-\section{Computer Skills}
-
-\subsection{Programming Languages}
-\cvitem[12pt]{Very Familiar}{\textsc{C}, \textsc{C++}, \textsc{Java},
-							\textsc{Python}}
-\cvitem[12pt]{Familiar}{\textsc{HTML}, \textsc{CSS}, \textsc{Javascript},
-						\textsc{XML}, \textsc{Lisp}, \textsc{C\#},
-						\textsc{SQL}}
-
-\subsection{Libraries and Tools}
-\cvitem[12pt]{Familiar}{\textsc{Django}, \textsc{LaTeX}, \textsc{AndEngine},
-						\textsc{Bootstrap}, \textsc{Ogre3D}, \textsc{Bullet},
-						\textsc{Unity3D}}
-
-% --- projects ---
-\section{Projects}
-
-\subsection{Racquet}
-\cvitem[12pt]{}{Designed a 3D game using Ogre3D, Bullet Physics Library, and RakNet networking library}
-
-\subsection{Motion Capture Viewer}
-\cvitem[12pt]{}{Created a viewer to display \textsc{bvh} data in real time}
-
-\subsection{Model Viewer}
-\cvitem[12pt]{}{Implemented a 3D object viewer to view 3D \textsc{obj} objects}
-
-\subsection{Paddletronic Duel}
-\cvitem[12pt]{}{Developed AI system for computer opponents}
-
-\subsection{World Crises Database}
-\cvitem[12pt]{}{Created a website using \textsc{Django} and \textsc{Bootstrap} for a public database for world crises}
+\cvitem{Japanese}{Business-level proficiency. Passed the N2 level of the Japanese Language Profiency Test}
+\cvitem[12pt]{Coding Languages}{Javascript, Ruby, Python}
+\cvitem[12pt]{Frameworks}{React.js, Webpack, SystemJS, Node}
+\cvitem[12pt]{Systems}{AWS, Docker}
 
 % --- end document ---
 \end{document}
