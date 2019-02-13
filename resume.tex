@@ -37,6 +37,8 @@
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
+\usepackage{CJKutf8}
+
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -46,7 +48,7 @@
 
 % All information in this block is optional, comment out any lines you don't need
 % \title{}
-\address{2601 Esperanza Crossing}{Austin, Texas 78758}
+\address{東京都千代田区神田}{2丁目19番7号}
 \mobile{+1-512-817-9975}
 % The first argument is the url for the clickable link,
 % the second argument is the url displayed in the template
@@ -57,8 +59,8 @@
 
 % --- begin doc ---
 
-\begin{document}
-
+\begin {document}
+\begin {CJK}{UTF8}{min}
 \makecvtitle % Print the CV title
 
 % --- work experience ---
@@ -121,4 +123,5 @@ experience in working with teams in separate time zones around the world
 \cvitem[12pt]{Systems}{AWS, Docker}
 
 % --- end document ---
-\end{document}
+\end {CJK}
+\end {document}
