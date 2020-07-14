@@ -6,6 +6,7 @@ Contact Info
 ------------
 Taylor McKinney
 +1 512 817 9975
++81 080 726 55051
 taylorsmck@gmail.com
 https://github.com/taylormck/resume
 
@@ -13,7 +14,11 @@ Experience
 ----------
 Bazaarvoice
 Senior Software Engineer - Front End
-Oct 2013 - Present
+2013 - 2018
+
+Netsmile
+Systems Software Engineer - Front End
+2018 - 2019
 
 Education
 ---------
