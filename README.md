@@ -17,8 +17,12 @@ Senior Software Engineer - Front End
 2013 - 2018
 
 Netsmile
-Systems Software Engineer - Front End
-2018 - 2019
+Systems Software Engineer - Full Stack
+2018 - 2020
+
+AXA
+Senior Software Engineer - Front End
+2020 - Present
 
 Education
 ---------

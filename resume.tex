@@ -33,7 +33,7 @@
 \moderncvcolor{blue}
 
 \usepackage{anyfontsize}
-\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage[scale=0.85]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -48,7 +48,7 @@
 
 % All information in this block is optional, comment out any lines you don't need
 % \title{}
-\address{Homes Aoto, 4-6-16 Aoto}{Katsushika-ku, Tokyo-to 125-0062}
+\address{Urban Park D-102, 40-1 Tokiwadai}{Hodogaya, Yokohama, Kanagawa 240-0062}
 \mobile{080-7265-5051}
 
 % The first argument is the url for the clickable link,
@@ -68,15 +68,35 @@
 
 \section{Experience}
 \cventry
+{2020--Present}
+{AXA}
+{Senior Software Engineer - Front End}
+{Tokyo}{}{}
+
+\cvlistitem{
+Developed multiple internal tools for processing insurance claims and managing
+contractor payments.
+}
+
+\cvlistitem{
+Created various utilities that assist production applications, including
+a URL shortening service and authentication tools.
+}
+
+\cvlistitem{
+Led training sessions on topics including Next.js, internationalization,
+and Redux.
+}
+
+\cventry
 {2019--2020}
 {Netsmile}
 {Systems Software Engineer - Full Stack}
 {Tokyo}{}{}
 
 \cvlistitem{
-Developed an API service layer for clients to interact with a new product for
-the company; took the opportunity to build a new project from scratch and get
-it operational as quickly as possible
+Developed an API service layer and web portal for clients using a combination of
+Swagger/OpenAPI, PostgreSQL, Hapi/Express, and Next.js.
 }
 
 \cventry
@@ -86,36 +106,36 @@ it operational as quickly as possible
 {Austin}{}{}
 
 \cvlistitem{
-Worked on a display application that serves over 400 million unique global
-visitors daily; developed skills to deliver quickly and carefully on large-scale
-applications
+Developed display application that serves over 400 million unique global
+visitors monthly. Originally done with Backbone and jQuery, later ported to
+React.
 }
 
 \cvlistitem{
 Overhauled accessibility, greatly improving user experience and protecting
-clients from legal action; gained experience with working across teams to
-understand and meet strict legal requirements
+clients from legal action. Got the primary display app up to WCAG 2.0 standards.
 }
 
 \cvlistitem{
 Refactored build system to quickly handle bursts of hundreds of build messages,
-along with improved monitoring and error handling; refined ability to tackle
-large projects
+along with improved monitoring and error handling. Created a solution based on
+Docker, SNS, SQS, and EC2.
 }
 
 \cvlistitem{
-Took charge of CSAT for display applications;
-developed new company processes to quickly triage CSAT tickets and route them
-appropriately and quickly; gained valuable experience working with support
-teams and with clients directly to solve problems as quickly and cleanly as
-possible
+Took charge of client satisfaction for display applications;
+developed new company processes to quickly triage tickets and route them
+appropriately. In addition to a lot of practice debugging live
+sites, this required coordinating with dozens of teams, both technical and
+non-technical. Hosted many training sessions to make sure teams were up to
+speed with our latest procedures.
 }
 
 \cvlistitem{
 Trained full team of new engineers around the globe to maintain the primary
-display application; developed my skills as a team leader and gained unique
+display application; developed my skills as a team leader and gained
 experience in working with teams in separate time zones and across language
-barriers
+barriers.
 }
 
 \section{Education}
@@ -132,9 +152,9 @@ barriers
 \section{Skills}
 
 \cvitem{Japanese}{JLPT N2 - Business-level proficiency}
-\cvitem[12pt]{Coding Languages}{Javascript, Ruby, Python}
-\cvitem[12pt]{Frameworks}{Next.js, React.js, Webpack, SystemJS, Node, PostgreSQL, Knex}
-\cvitem[12pt]{Systems}{AWS, Docker}
+\cvitem[12pt]{Coding Languages}{Javascript, Typescript, Python, PostgreSQL}
+\cvitem[12pt]{Frameworks}{Next.js, React.js, Redux, Webpack, Node}
+\cvitem[12pt]{Systems}{AWS, Docker, Serverless, OpenShift}
 
 % --- end document ---
 \end {CJK}
