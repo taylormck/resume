@@ -27,15 +27,15 @@
 % paper sizes: a4paper, letterpaper, a5paper,legalpaper,
 %			   executivepaper or landscape;
 % font families: sans or roman
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[11pt,letterpaper,sans]{moderncv}
 
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 
 \usepackage{anyfontsize}
 \usepackage[scale=0.85]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+% \setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+% \setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 \usepackage{CJKutf8}
 
@@ -48,8 +48,8 @@
 
 % All information in this block is optional, comment out any lines you don't need
 % \title{}
-\address{Urban Park D-102, 40-1 Tokiwadai}{Hodogaya, Yokohama, Kanagawa 240-0062}
-\mobile{080-7265-5051}
+\address{Tokyo, Japan}{}
+\mobile{(+81)-80-7265-5051}
 
 % The first argument is the url for the clickable link,
 % the second argument is the url displayed in the template
@@ -68,75 +68,137 @@
 
 \section{Experience}
 \cventry
-{2020--Present}
+{2022--Present}
+{SmartNews}
+{Senior Software Engineer - Front-End}
+{Tokyo}{Japan}{}
+
+\cvlistitem{
+Developed a Webview component for a mobile app that could be used to display news stories and
+a variety of additional content that could not be handled by the native components.
+This was my introduction to mobile development, and I learned a lot about building web applications
+designed to run inside mobile applications. This project relied on vanilla JavaScript, but used
+Rollup and a lot of bash scripts for deployment.
+}
+
+\cvlistitem{
+Worked on a WYSIWYG editor that non-engineering employees could use to create a variety of content,
+such as pages displaying news related to a specific event, or new visual data components. This
+project used React itself, but supported adding components made by other teams which could be
+vanilla web components, React components, or Svelte components.
+}
+
+\cvlistitem{
+Developed internal web portal for Advertising clients to manage their ads, ad groups, and campaigns.
+This brought the company up to modern standards for advertisment management. It also served as a
+testbed for some of the latest front-end libraries, such as Vite, pnpm, and ReactQuery.
+}
+
+\cventry
+{2020--2022}
 {AXA}
-{Senior Software Engineer - Front End}
-{Tokyo}{}{}
+{Senior Software Engineer - Front-End}
+{Tokyo}{Japan}{}
 
 \cvlistitem{
-Developed multiple internal tools for processing insurance claims and managing
-contractor payments.
+Developed tool to send customers automated updates on their claims via SMS. This service ran on
+AWS Lambda functions, and used S3 for storage some simple details, such as shorted URLs which could
+fit in an SMS message.
 }
 
 \cvlistitem{
-Created various utilities that assist production applications, including
-a URL shortening service and authentication tools.
+Developed an internal API authentication tool that allowed teams to secure any APIs we created in
+a one-size-fits-all manner. This freed up API teams from needing to design their own security
+measures. This tool made use of some AWS Lambda functions and some neat API Gateway configuration.
 }
 
 \cvlistitem{
-Led training sessions on topics including Next.js, internationalization,
-and Redux.
+Created a web portal for employees to manage sales representive contracts, as well as project the
+expected payment for contracted sales reps out to six months. This project used Create React App for
+the front-end, and Java for the API, and a z/OS mainframe for the back-end.
+}
+
+\cvlistitem{
+Designed the architecture for a multitude of applications and tools as requested by teams
+throughout the company.
+}
+
+\cvlistitem{
+Became a leader for the JavaScript Community of Practices.
+Hosted weekly meetups for everyone to discuss the latest changes in JavaScript, discuss new tools,
+and have the occasional friendly bike-shed about our company-wide practices. We also held small quizes
+to demonstrate useful new features, and all worked together to create the standards for front-end
+development at the company. Additionally, I led training sessions on topics including Next.js,
+internationalization, accessibility, and Redux.
 }
 
 \cventry
 {2019--2020}
 {Netsmile}
-{Systems Software Engineer - Full Stack}
+{Systems Software Engineer - Full-Stack}
 {Tokyo}{}{}
 
 \cvlistitem{
-Developed an API service layer and web portal for clients using a combination of
-Swagger/OpenAPI, PostgreSQL, Hapi/Express, and Next.js.
+Developed an API service layer and web portal for clients. This application allowed users to upload
+photos and documents, forward those files along with client configuration to an AI pipeline for OCR
+and image recognition tasks, then report the results to the user. This application used Next.js for
+the front-end, Knex.js and PostgreSQL for metadata and client config, S3 for storing copies of
+output files, and RabbitMQ to interface with the AI pipeline.
 }
 
+\clearpage
 \cventry
 {2013--2019}
 {Bazaarvoice}
-{Senior Software Engineer - Front End}
-{Austin}{}{}
+{Senior Software Engineer - Front-End}
+{Austin}{USA}{}
 
 \cvlistitem{
-Developed display application that serves over 400 million unique global
-visitors monthly. Originally done with Backbone and jQuery, later ported to
-React.
+Developed 3rd-party application to display ratings and reviews for retail clients.
+With over 400 million unique visitors per month, work on this application was high pressure, and
+it's where I first worked in front-end development.
+The application itself was built using a combination of Backbone and jQuery, and had strict
+requirements for performance and user experience.
 }
 
 \cvlistitem{
-Overhauled accessibility, greatly improving user experience and protecting
-clients from legal action. Got the primary display app up to WCAG 2.0 standards.
+Early work on this project involved improving accessibility support. This involved learning the
+WCAG 2.0 standard and how to meet it, how to use and test various software for supporting impaired
+users, and learning a mental framework for how to approach accessibility early and effectively.
 }
 
 \cvlistitem{
-Refactored build system to quickly handle bursts of hundreds of build messages,
-along with improved monitoring and error handling. Created a solution based on
-Docker, SNS, SQS, and EC2.
+Completely overhauled the build system for the application to scale better with growing use. As our
+client base grew, the build system needed to handle an order of magnitude more messages. I was able
+to completely retool the build system to use an solution. This solution took the form
+of a docker image running in an autoscaling group in EC2 that processed messages coming from SQS
+and SNS, and started new instances based on the size of the queue. Once this overhaul was done, the
+build system could handle any number of builds in under 10 minutes.
 }
 
 \cvlistitem{
-Took charge of client satisfaction for display applications;
-developed new company processes to quickly triage tickets and route them
-appropriately. In addition to a lot of practice debugging live
-sites, this required coordinating with dozens of teams, both technical and
-non-technical. Hosted many training sessions to make sure teams were up to
-speed with our latest procedures.
+Managed client satisfaction for all display applications. Developed new company processes to quickly
+triage tickets and route them to the appropriate teams. Later developed runbooks for the most
+common reaccuring issues, and trained support teams to use the runbooks to solve these issues
+immediately, avoiding the need to wait for developers to respond. This gave me plenty of practice
+debugging client code on live sites, taught me many ways to approach identifying and solving errors,
+and also helped me develop soft skills such as communicating with clients and support staff.
 }
 
 \cvlistitem{
-Trained full team of new engineers around the globe to maintain the primary
-display application; developed my skills as a team leader and gained
-experience in working with teams in separate time zones and across language
-barriers.
+Trained and lead international team of engineers to take over several applications, including the
+front-end application mentioned above. This involved helping them get familiar with the applicaiton,
+teaching them the various processes we had developed to keep the application running smoothly, and
+slowly transitioning myself out.
 }
+
+% --- skills ---
+
+\section{Skills}
+
+\cvitem{Languages}{English - Native Speaker, JLPT N2 - Business-level proficiency}
+\cvitem[11pt]{Front-End}{Javascript, Typescript, Next.js, React.js, Redux, Webpack, Node}
+\cvitem[11pt]{Full-Stack}{AWS, Docker, Serverless, OpenShift, C\#, Java, Python, MySQL, PostgreSQL}
 
 \section{Education}
 
@@ -145,16 +207,6 @@ barriers.
 {Bachelor of Science in Computer Science}
 {The University of Texas}
 {Austin}{}{}
-
-
-% --- skills ---
-
-\section{Skills}
-
-\cvitem{Japanese}{JLPT N2 - Business-level proficiency}
-\cvitem[12pt]{Coding Languages}{Javascript, Typescript, Python, PostgreSQL}
-\cvitem[12pt]{Frameworks}{Next.js, React.js, Redux, Webpack, Node}
-\cvitem[12pt]{Systems}{AWS, Docker, Serverless, OpenShift}
 
 % --- end document ---
 \end {CJK}
