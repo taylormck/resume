@@ -84,6 +84,20 @@ const info: ResumeInfo = {
   },
   jobs: [
     {
+      employerName: "Revcomm",
+      positionTitle: "Senior Software Engineer - Full Stack",
+      location: {
+        city: "Tokyo",
+        country: "Japan",
+      },
+      startDate: "2023",
+      talkingPoints: [
+        "Built and maintained an application to manage the authentication and management of users, including " +
+          "clients, their users, and of Revcomm's internal users. This includes several APIs for managing user data, " +
+          "and multiple front-end applications.",
+      ],
+    },
+    {
       employerName: "SmartNews",
       location: {
         city: "Tokyo",
