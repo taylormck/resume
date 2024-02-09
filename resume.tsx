@@ -3,11 +3,16 @@ import { Page, Text, View, Document, Font, render } from "@react-pdf/renderer";
 import { createTw } from "react-pdf-tailwind";
 
 Font.register({
-  family: "Fira Sans",
+  family: "Crimson Text",
   fonts: [
     {
-      src: "http://fonts.gstatic.com/s/firasans/v7/EjsrzDkQUQCDwsBtLpcVQaCWcynf_cDxXwCLxiixG1c.ttf",
+      src: `${__dirname}/assets/fonts/Crimson_Text/CrimsonText-Regular.ttf`,
     },
+    {
+      src: `${__dirname}/assets/fonts/Crimson_Text/CrimsonText-Italic.ttf`,
+      fontStyle: "italic",
+    },
+    // NOTE there are more, I just haven't linked them all.
   ],
 });
 
@@ -15,10 +20,13 @@ const tw = createTw({
   theme: {
     fontFamily: {
       sans: ["Fira Sans"],
+      serif: ["Crimson Text"],
     },
     extend: {
       colors: {
-        custom: "#bada55",
+        jet: "#2a2d31",
+        "slate-gray": "#6d7f93",
+        "blue-green": "#359ebf",
       },
     },
   },
@@ -317,31 +325,52 @@ const info: ResumeInfo = {
   ],
 };
 
+const SectionHeader: React.FunctionComponent<{ text: string }> = ({ text }) => (
+  <View style={tw("flex flex-row items-center")}>
+    <View style={tw("basis-6 h-px bg-cyan-500")} />
+    <Text style={tw("grow-0 m-1 px-1 rounded-md text-xl leading-5")}>
+      {text}
+    </Text>
+    <View style={tw("basis-full h-px bg-cyan-500")} />
+  </View>
+);
+
+const SubsectionHeader: React.FunctionComponent<{ text: string }> = ({
+  text,
+}) => <Text style={tw("text-lg")}>{text}</Text>;
+
 const MyDocument = () => (
-  <Document>
-    <Page size="A4" style={tw("p-12 font-sans")}>
-      <View>
+  <Document
+    title="Resume"
+    author={info.name}
+    subject={`${info.name}'s Resume`}
+    language="en"
+  >
+    <Page size="A4" style={tw("font-serif text-base")}>
+      <View style={tw("flex flex-row justify-between m-6 mb-2")} fixed>
         <View>
-          <Text>{info.name}</Text>
+          <Text style={tw("text-xl")}>{info.name}</Text>
         </View>
 
-        <View>
+        <View
+          style={tw("flex flex-col items-end text-sm text-slate-500 italic")}
+        >
           <Text>{`${info.address.city}, ${info.address.country}`}</Text>
           <Text>{info.phone}</Text>
           <Text>{info.email}</Text>
         </View>
       </View>
 
-      <View style={tw("p-20 bg-gray-100")}>
-        <Text>Experience</Text>
+      <View style={tw("mx-4 flex flex-col items-start")}>
+        <SectionHeader text="Experience" />
 
-        <ul>
+        <ul style={tw("list-disc")}>
           {info.jobs.map((job, i) => (
             <li key={`job-${i}`}>
-              <View style={tw("p-12 bg-gray-200")}>
-                <Text style={tw("bg-gray-300")}>{job.employerName}</Text>
+              <View style={tw("px-2")}>
+                <SubsectionHeader text={job.employerName} />
 
-                <ul>
+                <ul style={tw("px-2")}>
                   {job.talkingPoints.map((talkingPoint, j) => (
                     <li key={`job-${i}-talking-point-${j}`}>
                       <Text style={tw("bg-gray-400")}>{talkingPoint}</Text>
@@ -355,7 +384,7 @@ const MyDocument = () => (
       </View>
 
       <View>
-        <Text>Skills</Text>
+        <SectionHeader text="Skills" />
 
         <ul>
           {info.skillSets.map((skillSet, i) => (
@@ -379,7 +408,7 @@ const MyDocument = () => (
       </View>
 
       <View>
-        <Text>Education</Text>
+        <SectionHeader text="Education" />
 
         <ul>
           {info.education.map((school, i) => (
