@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "Hodogaya",
+    "JLPT",
+    "Kanagawa",
+    "SonarQube",
+    "runbook",
+    "runbooks",
+    "Tokiwadai",
+    "WCAG"
+  ]
+}
