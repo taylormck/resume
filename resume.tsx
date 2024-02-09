@@ -327,17 +327,25 @@ const info: ResumeInfo = {
 
 const SectionHeader: React.FunctionComponent<{ text: string }> = ({ text }) => (
   <View style={tw("flex flex-row items-center")}>
-    <View style={tw("basis-6 h-px bg-cyan-500")} />
-    <Text style={tw("grow-0 m-1 px-1 rounded-md text-xl leading-5")}>
+    <View style={tw("basis-6 h-0.5 bg-sky-600")} />
+    <Text style={tw("grow-0 m-1 px-1 rounded-md text-xl leading-snug")}>
       {text}
     </Text>
-    <View style={tw("basis-full h-px bg-cyan-500")} />
+    <View style={tw("basis-full h-0.5 bg-sky-500")} />
   </View>
 );
 
 const SubsectionHeader: React.FunctionComponent<{ text: string }> = ({
   text,
-}) => <Text style={tw("text-lg")}>{text}</Text>;
+}) => <Text style={tw("text-lg leading-normal")}>{text}</Text>;
+
+const SkillDisplay: React.FunctionComponent<{ skill: Skill }> = ({ skill }) => (
+  <Text style={tw("bg-sky-200 rounded-md flex-initial px-2 leading-normal")}>
+    {skill.qualification
+      ? `${skill.name} (${skill.qualification})`
+      : skill.name}
+  </Text>
+);
 
 const MyDocument = () => (
   <Document
@@ -364,16 +372,27 @@ const MyDocument = () => (
       <View style={tw("mx-4 flex flex-col items-start")}>
         <SectionHeader text="Experience" />
 
-        <ul style={tw("list-disc")}>
+        <ul style={tw("gap-2")}>
           {info.jobs.map((job, i) => (
             <li key={`job-${i}`}>
-              <View style={tw("px-2")}>
-                <SubsectionHeader text={job.employerName} />
+              <View style={tw("px-2")} wrap={false}>
+                <View style={tw("flex flex-row items-center gap-2")}>
+                  <SubsectionHeader text={job.employerName} />
 
-                <ul style={tw("px-2")}>
+                  <Text>{job.positionTitle}</Text>
+
+                  <Text
+                    style={tw("text-slate-700")}
+                  >{`${job.startDate} - ${job.endDate ?? "Present"}`}</Text>
+                </View>
+
+                <ul style={tw("px-4 gap-2")}>
                   {job.talkingPoints.map((talkingPoint, j) => (
-                    <li key={`job-${i}-talking-point-${j}`}>
-                      <Text style={tw("bg-gray-400")}>{talkingPoint}</Text>
+                    <li
+                      key={`job-${i}-talking-point-${j}`}
+                      style={tw("border-l-2 border-sky-500 pl-2")}
+                    >
+                      <Text>{talkingPoint}</Text>
                     </li>
                   ))}
                 </ul>
@@ -383,38 +402,44 @@ const MyDocument = () => (
         </ul>
       </View>
 
-      <View>
+      <View style={tw("mx-4 flex flex-col items-start")} break>
         <SectionHeader text="Skills" />
 
-        <ul>
+        <ul style={tw("gap-y-3")}>
           {info.skillSets.map((skillSet, i) => (
             <li key={`skillSet-${i}`}>
-              <View>
-                <Text>{skillSet.name}</Text>
+              <View style={tw("flex flex-row gap-x-2")}>
+                <Text style={tw("basis-24 text-right")}>{skillSet.name}</Text>
 
-                <ul>
-                  {skillSet.skills.map((skill) =>
-                    skill.qualification ? (
-                      <Text>{`${skill.name} (${skill.qualification})`}</Text>
-                    ) : (
-                      <Text>{`${skill.name}`}</Text>
-                    ),
-                  )}
-                </ul>
+                <View style={tw("flex flex-row flex-wrap gap-1 basis-5/6")}>
+                  {skillSet.skills.map((skill) => (
+                    <SkillDisplay skill={skill} />
+                  ))}
+                </View>
               </View>
             </li>
           ))}
         </ul>
       </View>
 
-      <View>
+      <View style={tw("mx-4 flex flex-col items-start")}>
         <SectionHeader text="Education" />
 
         <ul>
           {info.education.map((school, i) => (
             <li key={`schools-${i}`}>
               <View>
-                <Text>{school.name}</Text>
+                <SubsectionHeader text={school.name} />
+
+                <View style={tw("px-2 flex flex-row gap-2")}>
+                  <Text>{school.qualification}</Text>
+                  <Text
+                    style={tw("text-slate-500")}
+                  >{`${school.startDate}-${school.endDate}`}</Text>
+                  <Text
+                    style={tw("text-slate-500")}
+                  >{`${school.location.city}, ${school.location.country}`}</Text>
+                </View>
               </View>
             </li>
           ))}
