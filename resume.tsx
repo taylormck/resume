@@ -12,7 +12,7 @@ Font.register({
       src: `${__dirname}/assets/fonts/Crimson_Text/CrimsonText-Italic.ttf`,
       fontStyle: "italic",
     },
-    // NOTE there are more, I just haven't linked them all.
+    // NOTE: there are more, I just haven't linked them all.
   ],
 });
 
@@ -101,8 +101,11 @@ const info: ResumeInfo = {
       startDate: "2023",
       talkingPoints: [
         "Built and maintained an application to manage the authentication and management of users, including " +
-          "clients, their users, and of Revcomm's internal users. This includes several APIs for managing user data, " +
-          "and multiple front-end applications.",
+        "clients, their users, and of Revcomm's internal users. This includes several APIs for managing user data, " +
+        "and multiple front-end applications.",
+        "Created template system for login page. This new system allows the design team to adjust the login page " +
+        "in a variety of ways. Before this change, the team needed to manually create the changes to the login page " +
+        "in code. To run the additional service, I used with using fullstack Rust."
       ],
     },
     {
@@ -116,17 +119,17 @@ const info: ResumeInfo = {
       endDate: "2023",
       talkingPoints: [
         "Developed a Webview component for a mobile app that could be used to display news stories and a variety of " +
-          "additional content that could not be handled by the native components. This was my introduction to mobile " +
-          "development, and I learned a lot about building web applications designed to run inside mobile " +
-          "applications. This project relied on vanilla JavaScript, but used Rollup and a lot of bash scripts for " +
-          "deployment.",
+        "additional content that could not be handled by the native components. This was my introduction to mobile " +
+        "development, and I learned a lot about building web applications designed to run inside mobile " +
+        "applications. This project relied on vanilla JavaScript, but used Rollup and a lot of bash scripts for " +
+        "deployment.",
         "Worked on a WYSIWYG editor that non-engineering employees could use to create a variety of content, such as " +
-          "pages displaying news related to a specific event, or new visual data components. This project used React " +
-          "itself, but supported adding components made by other teams which could be vanilla web components, React " +
-          "components, or Svelte components.",
+        "pages displaying news related to a specific event, or new visual data components. This project used React " +
+        "itself, but supported adding components made by other teams which could be vanilla web components, React " +
+        "components, or Svelte components.",
         "Developed internal web portal for Advertising clients to manage their ads, ad groups, and campaigns. This " +
-          "brought the company up to modern standards for advertisement management. It also served as a testbed for " +
-          "some of the latest front-end libraries, such as Vite, pnpm, and ReactQuery.",
+        "brought the company up to modern standards for advertisement management. It also served as a testbed for " +
+        "some of the latest front-end libraries, such as Vite, pnpm, and ReactQuery.",
       ],
     },
     {
@@ -140,21 +143,21 @@ const info: ResumeInfo = {
       endDate: "2022",
       talkingPoints: [
         "Developed tool to send customers automated updates on their claims via SMS. This service ran on AWS Lambda " +
-          "functions, and used S3 for storage some simple details, such as shorted URLs which could fit in an SMS " +
-          "message.",
+        "functions, and used S3 for storage some simple details, such as shorted URLs which could fit in an SMS " +
+        "message.",
         "Developed an internal API authentication tool that allowed teams to secure any APIs we created in a " +
-          "one-size-fits-all manner. This freed up API teams from needing to design their own security measures. " +
-          "This tool made use of some AWS Lambda functions and some neat API Gateway configuration.",
+        "one-size-fits-all manner. This freed up API teams from needing to design their own security measures. " +
+        "This tool made use of some AWS Lambda functions and some neat API Gateway configuration.",
         "Created a web portal for employees to manage sales representative contracts, as well as project the " +
-          "expected payment for contracted sales reps out to six months. This project used Create React App for the " +
-          "front-end, and Java for the API, and a z/OS mainframe for the back-end.",
+        "expected payment for contracted sales reps out to six months. This project used Create React App for the " +
+        "front-end, and Java for the API, and a z/OS mainframe for the back-end.",
         "Designed the architecture for a multitude of applications and tools as requested by teams throughout " +
-          "the company.",
+        "the company.",
         "Became a leader for the JavaScript Community of Practices. Hosted weekly meetups for everyone to discuss " +
-          "the latest changes in JavaScript, discuss new tools, and have the occasional friendly bike-shed about our " +
-          "company-wide practices. We also held small quizzes to demonstrate useful new features, and all worked " +
-          "together to create the standards for front-end development at the company. Additionally, I led training " +
-          "sessions on topics including Next.js, internationalization, accessibility, and Redux.",
+        "the latest changes in JavaScript, discuss new tools, and have the occasional friendly bike-shed about our " +
+        "company-wide practices. We also held small quizzes to demonstrate useful new features, and all worked " +
+        "together to create the standards for front-end development at the company. Additionally, I led training " +
+        "sessions on topics including Next.js, internationalization, accessibility, and Redux.",
       ],
     },
     {
@@ -168,10 +171,10 @@ const info: ResumeInfo = {
       endDate: "2020",
       talkingPoints: [
         "Developed an API service layer and web portal for clients. This application allowed users to upload photos " +
-          "and documents, forward those files along with client configuration to an AI pipeline for OCR and image " +
-          "recognition tasks, then report the results to the user. This application used Next.js for the front-end, " +
-          "Knex.js and PostgreSQL for metadata and client config, S3 for storing copies of output files, and " +
-          "RabbitMQ to interface with the AI pipeline.",
+        "and documents, forward those files along with client configuration to an AI pipeline for OCR and image " +
+        "recognition tasks, then report the results to the user. This application used Next.js for the front-end, " +
+        "Knex.js and PostgreSQL for metadata and client config, S3 for storing copies of output files, and " +
+        "RabbitMQ to interface with the AI pipeline.",
       ],
     },
     {
@@ -185,28 +188,28 @@ const info: ResumeInfo = {
       endDate: "2019",
       talkingPoints: [
         "Developed 3rd-party application to display ratings and reviews for retail clients. With over 400 million " +
-          "unique visitors per month, work on this application was high pressure, and it's where I first worked in " +
-          "front-end development. The application itself was built using a combination of Backbone and jQuery, and " +
-          "had strict requirements for performance and user experience.",
+        "unique visitors per month, work on this application was high pressure, and it's where I first worked in " +
+        "front-end development. The application itself was built using a combination of Backbone and jQuery, and " +
+        "had strict requirements for performance and user experience.",
         "Early work on this project involved improving accessibility support. This involved learning the WCAG 2.0 " +
-          "standard and how to meet it, how to use and test various software for supporting impaired users, and " +
-          "learning a mental framework for how to approach accessibility early and effectively.",
+        "standard and how to meet it, how to use and test various software for supporting impaired users, and " +
+        "learning a mental framework for how to approach accessibility early and effectively.",
         "Completely overhauled the build system for the application to scale better with growing use. As our client " +
-          "base grew, the build system needed to handle an order of magnitude more messages. I was able to completely " +
-          "retool the build system to use an solution. This solution took the form of a docker image running in an " +
-          "autoscaling group in EC2 that processed messages coming from SQS and SNS, and started new instances based " +
-          "on the size of the queue. Once this overhaul was done, the build system could handle any number of builds " +
-          "in under 10 minutes.",
+        "base grew, the build system needed to handle an order of magnitude more messages. I was able to completely " +
+        "retool the build system to use an solution. This solution took the form of a docker image running in an " +
+        "autoscaling group in EC2 that processed messages coming from SQS and SNS, and started new instances based " +
+        "on the size of the queue. Once this overhaul was done, the build system could handle any number of builds " +
+        "in under 10 minutes.",
         "Managed client satisfaction for all display applications. Developed new company processes to quickly triage " +
-          "tickets and route them to the appropriate teams. Later developed runbooks for the most common reoccurring " +
-          "issues, and trained support teams to use the runbooks to solve these issues immediately, avoiding the " +
-          "need to wait for developers to respond. This gave me plenty of practice debugging client code on live " +
-          "sites, taught me many ways to approach identifying and solving errors, and also helped me develop soft " +
-          "skills such as communicating with clients and support staff.",
+        "tickets and route them to the appropriate teams. Later developed runbooks for the most common reoccurring " +
+        "issues, and trained support teams to use the runbooks to solve these issues immediately, avoiding the " +
+        "need to wait for developers to respond. This gave me plenty of practice debugging client code on live " +
+        "sites, taught me many ways to approach identifying and solving errors, and also helped me develop soft " +
+        "skills such as communicating with clients and support staff.",
         "Trained and lead international team of engineers to take over several applications, including the front-end " +
-          "application mentioned above. This involved helping them get familiar with the application, teaching them " +
-          "the various processes we had developed to keep the application running smoothly, and slowly transitioning " +
-          "myself out.",
+        "application mentioned above. This involved helping them get familiar with the application, teaching them " +
+        "the various processes we had developed to keep the application running smoothly, and slowly transitioning " +
+        "myself out.",
       ],
     },
   ],
@@ -327,11 +330,11 @@ const info: ResumeInfo = {
 
 const SectionHeader: React.FunctionComponent<{ text: string }> = ({ text }) => (
   <View style={tw("flex flex-row items-center")}>
-    <View style={tw("basis-6 h-0.5 bg-sky-600")} />
+    <View style={tw("w-6 grow-0 h-0.5 bg-sky-600")} />
     <Text style={tw("grow-0 m-1 px-1 rounded-md text-xl leading-snug")}>
       {text}
     </Text>
-    <View style={tw("basis-full h-0.5 bg-sky-500")} />
+    <View style={tw("h-0.5 bg-sky-500 w-96")} />
   </View>
 );
 
@@ -354,7 +357,7 @@ const MyDocument = () => (
     subject={`${info.name}'s Resume`}
     language="en"
   >
-    <Page size="A4" style={tw("font-serif text-base")}>
+    <Page size="A4" style={tw("font-serif text-base max-w-[21cm]")}>
       <View style={tw("flex flex-row justify-between m-6 mb-2")} fixed>
         <View>
           <Text style={tw("text-xl")}>{info.name}</Text>
