@@ -107,7 +107,7 @@ const info: ResumeInfo = {
           "and multiple front-end applications.",
         "Created template system for login page. This new system allows the design team to adjust the login page " +
           "in a variety of ways. Before this change, the team needed to manually create the changes to the login page " +
-          "in code. To run the additional service, I used with using fullstack Rust.",
+          "in code. To run the additional service, I used fullstack Rust with Leptos.",
       ],
     },
     {
@@ -123,15 +123,14 @@ const info: ResumeInfo = {
         "Developed a Webview component for a mobile app that could be used to display news stories and a variety of " +
           "additional content that could not be handled by the native components. This was my introduction to mobile " +
           "development, and I learned a lot about building web applications designed to run inside mobile " +
-          "applications. This project relied on vanilla JavaScript, but used Rollup and a lot of bash scripts for " +
-          "deployment.",
-        "Worked on a WYSIWYG editor that non-engineering employees could use to create a variety of content, such as " +
-          "pages displaying news related to a specific event, or new visual data components. This project used React " +
-          "itself, but supported adding components made by other teams which could be vanilla web components, React " +
+          "applications. For this project I used vanilla JavaScript with Rollup and bash scripts for deployment.",
+        "Maintained a WYSIWYG editor that non-engineering employees could use to create a variety of content, such as " +
+          "pages displaying news related to a specific event, or new visual data components. This application was built with" +
+          "React, but supported adding components made by other teams which could be vanilla web components, React " +
           "components, or Svelte components.",
         "Developed internal web portal for Advertising clients to manage their ads, ad groups, and campaigns. This " +
-          "brought the company up to modern standards for advertisement management. It also served as a testbed for " +
-          "some of the latest front-end libraries, such as Vite, pnpm, and ReactQuery.",
+          "brought the company up to modern standards for advertisement management. I used this as an opportunity to " +
+          "learn some of the latest front-end libraries, such as Vite, pnpm, and ReactQuery.",
       ],
     },
     {
@@ -154,7 +153,9 @@ const info: ResumeInfo = {
           "expected payment for contracted sales reps out to six months. This project used Create React App for the " +
           "front-end, and Java for the API, and a z/OS mainframe for the back-end.",
         "Designed the architecture for a multitude of applications and tools as requested by teams throughout " +
-          "the company.",
+          "the company. In addition to the architecture, I created the initial prototypes for most of these " +
+          "projects. This gave me plenty of opportunity to try out new tool suites and frameworks. This is when " +
+          "I first started learning newer JavaScript frameworks like Svelte and Vue",
         "Became a leader for the JavaScript Community of Practices. Hosted weekly meetups for everyone to discuss " +
           "the latest changes in JavaScript, discuss new tools, and have the occasional friendly bike-shed about our " +
           "company-wide practices. We also held small quizzes to demonstrate useful new features, and all worked " +
@@ -208,10 +209,13 @@ const info: ResumeInfo = {
           "need to wait for developers to respond. This gave me plenty of practice debugging client code on live " +
           "sites, taught me many ways to approach identifying and solving errors, and also helped me develop soft " +
           "skills such as communicating with clients and support staff.",
+        "Worked on the Incubator team, which built prototype applications meant to suppliment the primary Ratings " +
+          "& Reviews application. I created an application that allowed clients to display SVG star images, " +
+          "an application to display a carousel of user submitted images, and a debugger tool to help the " +
+          "Support team quickly identify errors in the clients' implementation.",
         "Trained and lead international team of engineers to take over several applications, including the front-end " +
-          "application mentioned above. This involved helping them get familiar with the application, teaching them " +
-          "the various processes we had developed to keep the application running smoothly, and slowly transitioning " +
-          "myself out.",
+          "application mentioned above. This involved helping them get familiar with the application and teaching them " +
+          "the various support processes that I had developed while maintaining the applciation myself.",
       ],
     },
   ],
@@ -263,13 +267,23 @@ const info: ResumeInfo = {
     },
     {
       name: "Testing",
-      skills: ["Jest", "Vitest", "Mocha", "AVA", "Node Tap"].map((tool) => ({
+      skills: [
+        "Testing Library",
+        "Jest",
+        "Vitest",
+        "Mocha",
+        "AVA",
+        "Node Tap",
+        "Playwright",
+      ].map((tool) => ({
         name: tool,
       })),
     },
     {
       name: "Back End",
       skills: [
+        "Node",
+        "Bun",
         "SpringBoot",
         "Django",
         "Knex.js",
@@ -277,7 +291,6 @@ const info: ResumeInfo = {
         "MySQL",
         "PostgreSQL",
         "Leptos",
-        "Redis",
       ].map((tool) => ({
         name: tool,
       })),
@@ -316,18 +329,27 @@ const info: ResumeInfo = {
         "Github Actions",
         "OpenShift",
         "TravisCI",
+        "SonarQube",
       ].map((tool) => ({ name: tool })),
     },
     {
-      name: "Assorted",
+      name: "Infrastructure",
       skills: [
+        "Redis",
         "Serverless",
         "Docker",
         "Podman",
-        "SonarQube",
         "Terraform",
         "Kubernetes",
-      ].map((tool) => ({ name: tool })),
+      ].map((tool) => ({
+        name: tool,
+      })),
+    },
+    {
+      name: "Assorted",
+      skills: [].map((tool) => ({
+        name: tool,
+      })),
     },
   ],
   education: [
