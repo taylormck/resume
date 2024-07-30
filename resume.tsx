@@ -130,7 +130,7 @@ const info: ResumeInfo = {
           "components, or Svelte components.",
         "Developed internal web portal for Advertising clients to manage their ads, ad groups, and campaigns. This " +
           "brought the company up to modern standards for advertisement management. I used this as an opportunity to " +
-          "learn some of the latest front-end libraries, such as Vite, pnpm, and ReactQuery.",
+          "some of the latest front-end libraries, such as Vite, pnpm, and ReactQuery.",
       ],
     },
     {
