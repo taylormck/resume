@@ -74,6 +74,7 @@ interface ResumeInfo {
   address: Address;
   phone: string;
   email: string;
+  links: string[];
   jobs: Job[];
   skillSets: SkillSet[];
   education: School[];
@@ -83,6 +84,7 @@ const info: ResumeInfo = {
   name: "Taylor McKinney",
   phone: "(+81)-80-7265-5051",
   email: "taylorsmck@gmail.com",
+  links: ["github.com/taylormck"],
   address: {
     street: "40-1 Tokiwadai, Hodogaya",
     building: "Urban Park D-102",
@@ -383,6 +385,10 @@ const MyDocument = () => (
           <Text>{`${info.address.city}, ${info.address.country}`}</Text>
           <Text>{info.phone}</Text>
           <Text>{info.email}</Text>
+
+          {info.links.map((link) => (
+            <Text>{link}</Text>
+          ))}
         </View>
       </View>
 
