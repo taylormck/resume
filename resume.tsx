@@ -86,10 +86,9 @@ const info: ResumeInfo = {
   email: "taylorsmck@gmail.com",
   links: ["github.com/taylormck"],
   address: {
-    street: "40-1 Tokiwadai, Hodogaya",
-    building: "Urban Park D-102",
-    city: "Yokohama",
-    subdivision: "Kanagawa",
+    street: "Kita Ward Seiwadai 2-57-9",
+    city: "Kōbe",
+    subdivision: "Hyōgo",
     country: "Japan",
   },
   jobs: [
