@@ -102,11 +102,12 @@ const info: ResumeInfo = {
       startDate: "2023",
       talkingPoints: [
         "Built and maintained an application to manage the authentication and management of users, including " +
-          "clients, their users, and of Revcomm's internal users. This includes several APIs for managing user data, " +
-          "and multiple front-end applications.",
-        "Created template system for login page. This new system allows the design team to adjust the login page " +
-          "in a variety of ways. Before this change, the team needed to manually create the changes to the login page " +
-          "in code. To run the additional service, I used fullstack Rust with Leptos.",
+          "clients, their users, and of Revcomm's internal users. This includes several APIs for managing user " +
+          "data, and multiple front-end applications.",
+        "Created template system for login page. This system enables non-engineers to adjust the login page " +
+          "in a variety of ways, such as editing the banner, adjusting colors, or replacing images. Before this " +
+          "change, the team needed to manually create the changes to the login page " +
+          "in code. I built the service using fullstack Rust with Leptos.",
       ],
     },
     {
@@ -246,6 +247,7 @@ const info: ResumeInfo = {
         "Odin",
         "Zig",
         "Elixir",
+        "GLSL",
       ].map((lang) => ({ name: lang })),
     },
     {
@@ -335,6 +337,7 @@ const info: ResumeInfo = {
       name: "Infrastructure",
       skills: [
         "Redis",
+        "Valkey",
         "Serverless",
         "Docker",
         "Podman",
@@ -345,11 +348,17 @@ const info: ResumeInfo = {
       })),
     },
     {
-      name: "Assorted",
-      skills: [].map((tool) => ({
+      name: "Graphics",
+      skills: ["OpenGL", "Vulkan", "GLFW"].map((tool) => ({
         name: tool,
       })),
     },
+    // {
+    //   name: "Assorted",
+    //   skills: [].map((tool) => ({
+    //     name: tool,
+    //   })),
+    // },
   ],
   education: [
     {
