@@ -101,13 +101,13 @@ const info: ResumeInfo = {
       },
       startDate: "2023",
       talkingPoints: [
-        "Built and maintained an application to manage the authentication and management of users, including " +
+        "Built an application to manage the authentication and management of users, including " +
           "clients, their users, and of Revcomm's internal users. This includes several APIs for managing user " +
           "data, and multiple front-end applications.",
-        "Created template system for login page. This system enables non-engineers to adjust the login page " +
-          "in a variety of ways, such as editing the banner, adjusting colors, or replacing images. Before this " +
-          "change, the team needed to manually create the changes to the login page " +
-          "in code. I built the service using fullstack Rust with Leptos.",
+        "Created template system which enables non-engineers to customize the login page.",
+        "Led programmer training courses. These were meetings where I walked other developers through the creation " +
+          "of critical tools, such as an HTTP server, Redis, and SQLite, with an " +
+          "emphasis on understanding the tools' internals.",
       ],
     },
     {
@@ -121,16 +121,11 @@ const info: ResumeInfo = {
       endDate: "2023",
       talkingPoints: [
         "Developed a Webview component for a mobile app that could be used to display news stories and a variety of " +
-          "additional content that could not be handled by the native components. This was my introduction to mobile " +
-          "development, and I learned a lot about building web applications designed to run inside mobile " +
-          "applications. For this project I used vanilla JavaScript with Rollup and bash scripts for deployment.",
-        "Maintained a WYSIWYG editor that non-engineering employees could use to create a variety of content, such as " +
-          "pages displaying news related to a specific event, or new visual data components. This application was built with" +
-          "React, but supported adding components made by other teams which could be vanilla web components, React " +
-          "components, or Svelte components.",
-        "Developed internal web portal for Advertising clients to manage their ads, ad groups, and campaigns. This " +
-          "brought the company up to modern standards for advertisement management. I used this as an opportunity to " +
-          "some of the latest front-end libraries, such as Vite, pnpm, and ReactQuery.",
+          "additional content that could not be handled by the native components.",
+        "Developed a WYSIWYG editor that non-technical employees could use to create a variety of content, such " +
+          "as pages displaying news related to a specific event, or new visual data components. While primarily a " +
+          "React application, it also supported components vanilla web components and Svelte components.",
+        "Developed internal web portal for Advertising clients to manage their ads, ad groups, and campaigns.",
       ],
     },
     {
@@ -143,24 +138,19 @@ const info: ResumeInfo = {
       startDate: "2020",
       endDate: "2022",
       talkingPoints: [
-        "Developed tool to send customers automated updates on their claims via SMS. This service ran on AWS Lambda " +
-          "functions, and used S3 for storage some simple details, such as shorted URLs which could fit in an SMS " +
-          "message.",
-        "Developed an internal API authentication tool that allowed teams to secure any APIs we created in a " +
-          "one-size-fits-all manner. This freed up API teams from needing to design their own security measures. " +
-          "This tool made use of some AWS Lambda functions and some neat API Gateway configuration.",
-        "Created a web portal for employees to manage sales representative contracts, as well as project the " +
-          "expected payment for contracted sales reps out to six months. This project used Create React App for the " +
-          "front-end, and Java for the API, and a z/OS mainframe for the back-end.",
         "Designed the architecture for a multitude of applications and tools as requested by teams throughout " +
           "the company. In addition to the architecture, I created the initial prototypes for most of these " +
-          "projects. This gave me plenty of opportunity to try out new tool suites and frameworks. This is when " +
-          "I first started learning newer JavaScript frameworks like Svelte and Vue",
-        "Became a leader for the JavaScript Community of Practices. Hosted weekly meetups for everyone to discuss " +
-          "the latest changes in JavaScript, discuss new tools, and have the occasional friendly bike-shed about our " +
-          "company-wide practices. We also held small quizzes to demonstrate useful new features, and all worked " +
-          "together to create the standards for front-end development at the company. Additionally, I led training " +
-          "sessions on topics including Next.js, internationalization, accessibility, and Redux.",
+          "projects.",
+        "Developed tool to send customers automated updates on their claims via SMS.",
+        "Developed internal URL shortening service to create URLs that fit in an SMS message.",
+        "Developed an internal API authentication tool that allowed teams to secure any APIs we created in a " +
+          "one-size-fits-all manner.",
+        "Created a web portal for employees to manage sales representative contracts, as well as project the " +
+          "expected payment for contracted sales reps out to six months.",
+        "Led the JavaScript Community of Practices. Hosted weekly meetups for developers to discuss " +
+          "the latest changes in JavaScript, new tools, and company-wide best practices. ",
+        "Held training sessions on topics related to front-end development, including Next.js, " +
+          "internationalization, accessibility, and Redux.",
       ],
     },
     {
@@ -173,11 +163,8 @@ const info: ResumeInfo = {
       startDate: "2019",
       endDate: "2020",
       talkingPoints: [
-        "Developed an API service layer and web portal for clients. This application allowed users to upload photos " +
-          "and documents, forward those files along with client configuration to an AI pipeline for OCR and image " +
-          "recognition tasks, then report the results to the user. This application used Next.js for the front-end, " +
-          "Knex.js and PostgreSQL for metadata and client config, S3 for storing copies of output files, and " +
-          "RabbitMQ to interface with the AI pipeline.",
+        "Developed an API service layer and web portal for clients, which allowed users to upload photos " +
+          "and documents for OCR scanning",
       ],
     },
     {
@@ -190,32 +177,20 @@ const info: ResumeInfo = {
       startDate: "2013",
       endDate: "2019",
       talkingPoints: [
-        "Developed 3rd-party application to display ratings and reviews for retail clients. With over 400 million " +
-          "unique visitors per month, work on this application was high pressure, and it's where I first worked in " +
-          "front-end development. The application itself was built using a combination of Backbone and jQuery, and " +
-          "had strict requirements for performance and user experience.",
-        "Early work on this project involved improving accessibility support. This involved learning the WCAG 2.0 " +
-          "standard and how to meet it, how to use and test various software for supporting impaired users, and " +
-          "learning a mental framework for how to approach accessibility early and effectively.",
-        "Completely overhauled the build system for the application to scale better with growing use. As our client " +
-          "base grew, the build system needed to handle an order of magnitude more messages. I was able to completely " +
-          "retool the build system to use an solution. This solution took the form of a docker image running in an " +
-          "autoscaling group in EC2 that processed messages coming from SQS and SNS, and started new instances based " +
-          "on the size of the queue. Once this overhaul was done, the build system could handle any number of builds " +
-          "in under 10 minutes.",
-        "Managed client satisfaction for all display applications. Developed new company processes to quickly triage " +
-          "tickets and route them to the appropriate teams. Later developed runbooks for the most common reoccurring " +
-          "issues, and trained support teams to use the runbooks to solve these issues immediately, avoiding the " +
-          "need to wait for developers to respond. This gave me plenty of practice debugging client code on live " +
-          "sites, taught me many ways to approach identifying and solving errors, and also helped me develop soft " +
-          "skills such as communicating with clients and support staff.",
+        "Developed 3rd-party application to display ratings and reviews for retail clients. Served over 400 million " +
+          "unique visitors per month. Built using a combination of Backbone and jQuery, with strict requirements " +
+          "for performance and user experience.",
+        "Revamped accessibility support to meet the WCAG 2.0 standard.",
+        "Redesigned the build system for the application to scale better with growing client and site numbers. " +
+          "Build time was reduced from hours to under 10 minutes.",
+        "Led the Client Satisfaction team. Developed new company processes to quickly " +
+          "triage tickets and route them to the appropriate teams. Developed runbooks for common issues and trained " +
+          "support teams to resolve issues independently.",
+        "Debugged client code on live sites and worked directly with clients to resolve urgent issues.",
         "Worked on the Incubator team, which built prototype applications meant to suppliment the primary Ratings " +
-          "& Reviews application. I created an application that allowed clients to display SVG star images, " +
-          "an application to display a carousel of user submitted images, and a debugger tool to help the " +
-          "Support team quickly identify errors in the clients' implementation.",
-        "Trained and lead international team of engineers to take over several applications, including the front-end " +
-          "application mentioned above. This involved helping them get familiar with the application and teaching them " +
-          "the various support processes that I had developed while maintaining the applciation myself.",
+          "& Reviews application. Prototyped multilple applications that became new products, services, and " +
+          "internal tools.",
+        "Trained and led international team of engineers to take over several applications.",
       ],
     },
   ],
