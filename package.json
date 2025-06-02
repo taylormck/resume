@@ -2,7 +2,8 @@
   "name": "resume",
   "type": "module",
   "scripts": {
-    "build": "swc -q ./resume.tsx | node"
+    "build": "swc -q ./resume.tsx | node",
+    "build-jp": "swc -q ./resume_jp.tsx | node"
   },
   "dependencies": {
     "@react-pdf/renderer": "^3.3.8",
