@@ -1,16 +1,5 @@
 build-and-view: build view
 
-build: npm-install
-    npm run build
-
-build-and-view-jp: build-jp view-jp
-
-build-jp: npm-install
-    npm run build-jp
-
-npm-install:
-    npm install
-
 view:
     evince resume.pdf
 
@@ -19,9 +8,9 @@ view-jp:
 
 typst_args := "--font-path assets/fonts"
 
-build-typ:
+build:
     typst compile {{typst_args}} resume.typ
 
-build-typ-watch:
+build-watch:
     typst watch {{typst_args}} resume.typ
 
