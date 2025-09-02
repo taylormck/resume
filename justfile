@@ -16,3 +16,12 @@ view:
 
 view-jp:
     evince resume_jp.pdf
+
+typst_args := "--font-path assets/fonts"
+
+build-typ:
+    typst compile {{typst_args}} resume.typ
+
+build-typ-watch:
+    typst watch {{typst_args}} resume.typ
+
