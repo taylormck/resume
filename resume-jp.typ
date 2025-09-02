@@ -55,7 +55,7 @@
   #item-with-level("スペイン語", 2, subtitle: "初級") // Spanish, Basic
 
 
-  = #scale(x: 95%, reflow: true)[プログラミング言語] // Programming Languages
+  = プログラミング言語 // Programming Languages
 
   #item-pills((
     "Javascript",
@@ -77,7 +77,7 @@
   = フロントエンド // Front End
 
   #item-pills((
-    "React.js",
+    "React",
     "Vue.js",
     "SolidJS",
     "Next.js",
@@ -149,6 +149,8 @@
     "KMS",
     "Secrets Manager",
     "GCS", // Google Cloud Storage
+    "Jenkins",
+    "Cirlcle CI",
   ))
 
   = グラフィックス // Graphics
@@ -174,6 +176,8 @@
   - 内部パスワードやAPIトークンの潜在的なデータ漏洩を防ぐ、重要な脆弱性を排除した自動セキュリティシステムを設計・実装。
   - 非技術系チームメンバーがログインページを管理およびブランディングできるカスタマイズ可能なテンプレートシステムを開拓し、エンジニアリングチケット依頼の大幅な削減を実現。
   - （HTTPサーバー、Redis、SQLiteなどのコアインフラツールを一から構築するなど）ツールの内部理解とデバッグ能力を深める、組織全体の社内技術トレーニングコースを開発・主導。
+
+  / テック: Python/Django, Go, Rust/Leptos, TypeScript/Vue, AWS
 ]
 
 #entry(
@@ -185,6 +189,8 @@
   - ネイティブコンポーネントではまだサポートされていない動的ニュースコンテンツやインタラクティブ機能の表示を可能にする、モバイルアプリ向けの高性能Webviewコンポーネントを開発（1000万人以上のアクティブユーザーにリーチ）。
   - Reactを使用し、バニラWebコンポーネントとSvelteコンポーネントの拡張サポートを備えた多用途WYSIWYGエディターを設計・構築。このツールにより、非技術系コンテンツチームはエンジニアリングサポートなしでリッチなデータ駆動型ページを作成可能になり、コンテンツデプロイ時間を数日から数分に短縮。
   - 広告クライアントが広告、広告グループ、キャンペーンを直接管理できる内部セルフサービス広告ポータルを作成し、サポートチームの業務負荷を軽減。
+
+  / テック: TypeScript, JavaScript, React, Svelte, Vue, pnpm, Vite, AWS
 ]
 
 #entry(
@@ -198,6 +204,8 @@
   - SMSキャンペーン用の簡潔なリンクを生成する内部URL短縮サービスを設計。メッセージの明確さを確保することでクリック率を向上。
   - すべての内部チームがサービスを保護するための標準化された安全な方法を提供するユニバーサルAPI認証ゲートウェイを作成し、初期API開発時間を短縮。
   - JavaScript Community of Practiceを主導：開発者向けに週次ミートアップを開催し、Next.js、国際化(i18n)、アクセシビリティ(a11y)、Reduxに関するトレーニングセッションを実施（30人以上の開発者のスキル向上を支援）。
+
+  / テック: JavaScript, TypeScript, React, Java, Spring Boot, Python, AWS
 ]
 
 #entry(
@@ -207,6 +215,8 @@
   location: "東京都, 日本", // Tokyo, Japan
 )[
   - 文書アップロードとOCR処理のためのクライアント向けWebポータルおよびAPIサービスを構築し、以前は手動だったワークフローを効率化。
+
+  / テック: TypeScript, Next.js, React, RabbitMQ, AWS
 ]
 
 // Page break to make avoid splitting this entry.
@@ -223,6 +233,8 @@
   - レガシービルドシステムの再設計と最適化を実施。ビルド時間を数時間から10分未満に短縮し、数百のクライアントサイトに対するCI/CD効率を改善。
   - 顧客満足度チームを率い、新しいトリアージプロセスを導入し詳細なRunbookを作成。チケット解決時間を短縮し、サポートチームが一般的な問題の50%以上を独自に解決できるようにした。
   - 稼働中の本番サイトで重大なクライアントサイドの問題をデバッグおよび修正。エンタープライズクライアントと直接連携して緊急の問題を解決し、SLA順守を維持。
+
+  / テック: JavaScript, TypeScript, Backbone.js, Node, React, AWS
 ]
 
 = 学歴 // Education

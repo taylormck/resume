@@ -82,7 +82,7 @@
   = Front End
 
   #item-pills((
-    "React.js",
+    "React",
     "Vue.js",
     "SolidJS",
     "Next.js",
