@@ -219,13 +219,14 @@
     and documents for OCR scanning
 ]
 
+// Page break to make avoid splitting this entry.
 #colbreak()
 
 #entry(
   title: "Software Engineer / Senior Software Engineer",
   date: "06/2013\n ~\n 02/2019",
   institution: "Bazaarvoice",
-  location: "Tokyo, Japan",
+  location: "Austin, Texas, USA",
 )[
   - Developed 3rd-party application to display ratings and reviews for retail clients. Served over 400 million
     unique visitors per month. Built using a combination of Backbone and jQuery, with strict requirements
