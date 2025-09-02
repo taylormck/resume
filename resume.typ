@@ -11,7 +11,7 @@
     address: [Kōbe, Hyōgo, Japan],
     github: "github.com/taylormck",
     linkedin: "taylor-mckinney-bb638398",
-    phone: "(+81))-80-7265-5051",
+    phone: "(+81)-80-7265-5051",
   ),
   profile-picture: image("assets/me.jpg"),
   accent-color: rgb("#4682b4"),
@@ -20,15 +20,22 @@
 
 
 #side[
+  #set text(hyphenate: false)
+
   = About Me
-  I'm a seasoned senior software engineer, with experience delivering displays that get viewed hundreds of millions of
-  times per day around the world, and with creating the infrastructure to support it. I'm fluent in both Japanese and
-  client-speak, able to communicate with devs, support associates, and clients with ease. I'm always looking forward to
+  I'm a seasoned senior software engineer with experience delivering displays that get viewed hundreds of millions of
+  times per day around the world and creating the infrastructure to support it.
+  I'm fluent in both Japanese and
+  client-speak, able to communicate with devs, support associates, and clients with ease.
+  I'm always looking forward to
   building the next big thing, and take pride in ensuring client satisfaction.
 
   = Interests
-  - Web Development and Security
+
+  - Web Development
+  - Web Application Security
   - Computer Graphics
+  - Game Development
 
   = Personal
   Nationality: USA
@@ -39,6 +46,8 @@
 
   = Contact Info
   #contact-info()
+
+  = Links
   #social-links()
 
   // Use colbreak() to insert a page break
@@ -51,7 +60,7 @@
   #item-with-level("Spanish", 2, subtitle: "Basic")
 
 
-  #scale(x: 97%, reflow: true)[= Programming Languages]
+  = #scale(x: 95%, reflow: true)[Programming Languages]
 
   #item-pills((
     "Javascript",
@@ -151,6 +160,7 @@
   #item-pills((
     "OpenGL",
     "Vulkan",
+    "Raylib",
     "GLFW",
     "SDL2",
     "SDL3",
@@ -161,17 +171,19 @@
 
 #entry(
   title: "Senior Software Engineer - Full Stack",
-  date: "06/2023 ~ Now",
+  date: "06/2023\n ~\n Now",
   institution: "Revcomm Inc.",
-  location: "Japan",
+  location: "Japan - Remote",
 )[
-  - Built an application to manage the authentication and management of users, including
-    clients, their users, and of Revcomm's internal users.
-  - Implemented automated systems to prevent vulnerabilities, such as leaking passwords or tokens.
-  - Created template system which enables non-engineers to customize the login page.
-  - Led programmer training courses. These were meetings where I walked other developers through the creation
-    of critical tools, such as an HTTP server, Redis, and SQLite, with an emphasis on understanding the
-    tools' internals.
+  - Built a user management and authentication API, serving a diverse user base of clients, their end-users,
+    and internal staff.
+  - Engineered and enforced automated security systems that eliminated critical vulnerabilities,
+    preventing potential data leaks of internal passwords and API tokens.
+  - Pioneered a customizable template system that empowers non-technical team members to manage and brand login pages,
+    removing an entire class of engineering ticket requests.
+  - Developed and led organization-wide internal technical training courses on core infrastructure (e.g., building
+    tools such as an HTTP server, Redis, SQLite, all from scratch), deepening the developers' understanding of tool
+    internals and improving debugging capabilities.
 ]
 
 #entry(
@@ -180,12 +192,13 @@
   institution: "SmartNews",
   location: "Tokyo, Japan",
 )[
-  - Developed a Webview component for a mobile app that could be used to display news stories and a variety of
-    additional content that could not be handled by the native components.
-  - Developed a WYSIWYG editor that non-technical employees could use to create a variety of content, such
-    as pages displaying news related to a specific event, or new visual data components. While primarily a
-    React application, it also supported components vanilla web components and Svelte components.
-  - Developed internal web portal for Advertising clients to manage their ads, ad groups, and campaigns.
+  - Developed a highly performant Webview component for the mobile app, enabling the display of dynamic news content
+    and interactive features not yet supported by native components, reaching over 10 million active users.
+  - Designed and built a versatile WYSIWYG editor using React, with extensible support for vanilla web components
+    and Svelte components. This tool enabled non-technical content teams to create rich, data-drive pages without
+    engineering support, accelerating content deployment time from days down to minutes.
+  - Created an internal self-service advertising portal, allowing clients to directly manage ads, ad groups, and
+    campaigns, which reduced the support team's operational workload.
 ]
 
 #entry(
@@ -194,19 +207,16 @@
   institution: "AXA Life",
   location: "Tokyo, Japan",
 )[
-  - Designed the architecture for a multitude of applications and tools as requested by teams throughout
-    the company. In addition to the architecture, I created the initial prototypes for most of these
-    projects.
-  - Developed tool to send customers automated updates on their claims via SMS.
-  - Developed internal URL shortening service to create URLs that fit in an SMS message.
-  - Developed an internal API authentication tool that allowed teams to secure any APIs we created in a
-    one-size-fits-all manner.
-  - Created a web portal for employees to manage sales representative contracts, as well as project the
-    expected payment for contracted sales reps out to six months.
-  - Led the JavaScript Community of Practices. Hosted weekly meetups for developers to discuss
-    the latest changes in JavaScript, new tools, and company-wide best practices.
-  - Held training sessions on topics related to front-end development, including Next.js,
-    internationalization, accessibility, and Redux.
+  - Designed system architecture and built initial prototypes for numerous products and internal applications,
+    navigating internal bureaucracy and establishing scalable patterns adopted company-wide.
+  - Developed an automated SMS notification system for customer claim updates, improving customer communication
+    transparency and reducing inbound inquiry calls.
+  - Engineered an internal URL shortener to generate concise links for SMS campaigns, increasing click-through rates
+    by ensuring message clarity.
+  - Created a universal API authentication gateway, providing a standardized, secure method for all internal teams
+    to protect their services, cutting down initial API development time.
+  - Led the JavaScript Community of Practices: hosted weekly meetups an conducted training sessions for developers
+    sessions on Next.js, internationalization, accessibility, and Redux, upskilling a team of 30+ developers.
 ]
 
 #entry(
@@ -215,8 +225,8 @@
   institution: "Netsmile, Inc.",
   location: "Tokyo, Japan",
 )[
-  - Developed an API service layer and web portal for clients, which allowed users to upload photos
-    and documents for OCR scanning
+  - Built a client-facing web portal and API service for document upload and OCR processing, streamlining a
+    previously manual workflow.
 ]
 
 // Page break to make avoid splitting this entry.
@@ -228,20 +238,16 @@
   institution: "Bazaarvoice",
   location: "Austin, Texas, USA",
 )[
-  - Developed 3rd-party application to display ratings and reviews for retail clients. Served over 400 million
-    unique visitors per month. Built using a combination of Backbone and jQuery, with strict requirements
-    for performance and user experience.
-  - Revamped accessibility support to meet the WCAG 2.0 standard.
-  - Redesigned the build system for the application to scale better with growing client and site numbers.
-  - Build time was reduced from hours to under 10 minutes.
-  - Led the Client Satisfaction team. Developed new company processes to quickly
-    triage tickets and route them to the appropriate teams. Developed runbooks for common issues and trained
-    support teams to resolve issues independently.
-  - Debugged client code on live sites and worked directly with clients to resolve urgent issues.
-  - Worked on the Incubator team, which built prototype applications meant to suppliment the primary Ratings
-    & Reviews application. Prototyped multilple applications that became new products, services, and
-    internal tools.
-  - Trained and led international team of engineers to take over several applications.
+  - Developed and maintained a high-traffic, third-party ratings and reviews application using Backbone.js and jQuery,
+    serving over 400 million unique visitors monthly with strict performance budgets.
+  - Spearheaded an accessibility overhaul to achieve WCAG 2.0 compliance, expanding market reach and improving
+    usability for all users, while also protecting clients from legal liability.
+  - Redesigned and optimized the legacy build system, reducing build times from several hours to under 10 minutes
+    and improving CI/CD efficiency for hundreds of client sites.
+  - Led the Client Satisfaction team: implemented new triage processes and created detailed runbooks, decreasing
+    ticket resolution time and enabling support to independently resolve over 50% of common issues.
+  - Debugged and fixed critical client-side issues on live production sites, working direction with enterprise
+    clients to resolve urgent problems and maintain SLA compliance.
 ]
 
 = Education
@@ -252,3 +258,17 @@
   location: "Austin, Texas, United States of America",
   date: "2013",
 )[]
+
+= Extras
+
+#entry(
+  title: "Paddletronic Duel",
+  institution: "Bursting Brains",
+  location: "Austin, Texas, United States of America",
+  date: "2012",
+)[
+  Shipped a game on the Google Play store. (It has since been unpublished.)
+  - Rewrote the AI for computer-controlled opponents.
+  - Rewrote the physics engine to improve performance.
+  Gameplay video: https://www.youtube.com/watch?v=Mw0Mdpc1e8g
+]
