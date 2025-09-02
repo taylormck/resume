@@ -126,7 +126,7 @@
     "Sequelize",
     "MySQL",
     "PostgreSQL",
-    "SpringBoot",
+    "Spring Boot",
   ))
 
   = Cloud
@@ -154,6 +154,8 @@
     "KMS",
     "Secrets Manager",
     "GCS",
+    "Jenkins",
+    "Cirlcle CI",
   ))
 
   = Graphics
@@ -184,6 +186,8 @@
   - Developed and led organization-wide internal technical training courses on core infrastructure (e.g., building
     tools such as an HTTP server, Redis, SQLite, all from scratch), deepening the developers' understanding of tool
     internals and improving debugging capabilities.
+
+  / Tech stack: Python/Django, Go, Rust/Leptos, TypeScript/Vue, AWS
 ]
 
 #entry(
@@ -199,6 +203,8 @@
     engineering support, accelerating content deployment time from days down to minutes.
   - Created an internal self-service advertising portal, allowing clients to directly manage ads, ad groups, and
     campaigns, which reduced the support team's operational workload.
+
+  / Tech stack: TypeScript, JavaScript, React, Svelte, Vue, pnpm, Vite, AWS
 ]
 
 #entry(
@@ -215,8 +221,10 @@
     by ensuring message clarity.
   - Created a universal API authentication gateway, providing a standardized, secure method for all internal teams
     to protect their services, cutting down initial API development time.
-  - Led the JavaScript Community of Practices: hosted weekly meetups an conducted training sessions for developers
+  - Led the JavaScript Community of Practices: hosted weekly meet-ups an conducted training sessions for developers
     sessions on Next.js, internationalization, accessibility, and Redux, upskilling a team of 30+ developers.
+
+  / Tech stack: JavaScript, TypeScript, React, Java, Spring Boot, Python, AWS
 ]
 
 #entry(
@@ -227,6 +235,8 @@
 )[
   - Built a client-facing web portal and API service for document upload and OCR processing, streamlining a
     previously manual workflow.
+
+  / Tech stack: TypeScript, Next.js, React, RabbitMQ, AWS
 ]
 
 // Page break to make avoid splitting this entry.
@@ -248,6 +258,8 @@
     ticket resolution time and enabling support to independently resolve over 50% of common issues.
   - Debugged and fixed critical client-side issues on live production sites, working direction with enterprise
     clients to resolve urgent problems and maintain SLA compliance.
+
+  / Tech stack: JavaScript, TypeScript, Backbone.js, Node, React, AWS
 ]
 
 = Education
