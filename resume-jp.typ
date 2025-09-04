@@ -9,7 +9,7 @@
     email: "taylorsmck@gmail.com",
     position: "ソフトウェアエンジニア", // Software Engineer
     address: [神戸市, 兵庫県, 日本], // Kōbe, Hyōgo, Japan
-    github: "github.com/taylormck",
+    github: "taylormck",
     linkedin: "taylor-mckinney-bb638398",
     phone: "(+81)-80-7265-5051",
   ),
