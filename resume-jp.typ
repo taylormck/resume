@@ -168,7 +168,7 @@
 
 #entry(
   title: "シニアソフトウェアエンジニア - フルスタック", // Senior Software Engineer - Full Stack
-  date: "2023年06月\n ~\n 現在", // 06/2023 ~ Now
+  date: "2023年06月\n ~\n 2025年09月", // 06/2023 ~ 09/2025
   institution: "Revcomm Inc.",
   location: "日本 - リモート", // Japan - Remote
 )[
@@ -195,7 +195,7 @@
 
 #entry(
   title: "シニアソフトウェアエンジニア - フロントエンド", // Senior Software Engineer - Front End
-  date: "2020年08月\n ~\n 2022年05月", // 08/2020 ~ 05/2022
+  date: "2020年10月\n ~\n 2022年05月", // 08/2020 ~ 05/2022
   institution: "AXA生命", // AXA Life
   location: "東京都, 日本", // Tokyo, Japan
 )[
@@ -224,7 +224,7 @@
 
 #entry(
   title: "ソフトウェアエンジニア / シニアソフトウェアエンジニア", // Software Engineer / Senior Software Engineer
-  date: "2013年06月\n ~\n 2019年02月", // 06/2013 ~ 02/2019
+  date: "2013年10月\n ~\n 2019年02月", // 06/2013 ~ 02/2019
   institution: "Bazaarvoice",
   location: "オースティン, テキサス州, アメリカ合衆国", // Austin, Texas, USA
 )[

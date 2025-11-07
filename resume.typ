@@ -173,7 +173,7 @@
 
 #entry(
   title: "Senior Software Engineer - Full Stack",
-  date: "06/2023\n ~\n Now",
+  date: "06/2023\n ~\n 09/2025",
   institution: "Revcomm Inc.",
   location: "Japan - Remote",
 )[
@@ -209,7 +209,7 @@
 
 #entry(
   title: "Senior Software Engineer - Front End",
-  date: "08/2020\n ~\n 05/2022",
+  date: "10/2020\n ~\n 05/2022",
   institution: "AXA Life",
   location: "Tokyo, Japan",
 )[
@@ -244,7 +244,7 @@
 
 #entry(
   title: "Software Engineer / Senior Software Engineer",
-  date: "06/2013\n ~\n 02/2019",
+  date: "10/2013\n ~\n 02/2019",
   institution: "Bazaarvoice",
   location: "Austin, Texas, USA",
 )[
