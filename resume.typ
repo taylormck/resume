@@ -172,6 +172,17 @@
 = Professional Experience
 
 #entry(
+  title: "Senior Software Engineer - Front End",
+  date: "01/2026\n ~\n 04/2026",
+  institution: "Paypay Card",
+  location: "Japan - Remote",
+)[
+  - Created a new flow for users to report fradulent purchases and return their cards.
+
+  / Tech stack: TypeScript/Vue, Webview
+]
+
+#entry(
   title: "Senior Software Engineer - Full Stack",
   date: "06/2023\n ~\n 09/2025",
   institution: "Revcomm Inc.",
