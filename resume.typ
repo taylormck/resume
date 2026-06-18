@@ -173,11 +173,14 @@
 
 #entry(
   title: "Senior Software Engineer - Front End",
-  date: "01/2026\n ~\n 04/2026",
+  date: "01/2026\n ~\n 05/2026",
   institution: "Paypay Card",
   location: "Japan - Remote",
 )[
-  - Created a new flow for users to report fradulent purchases and return their cards.
+  - Led the project to combine separate web and mobile applications into a
+    single application that supports both platforms.
+  - Created a new flow for users to report fraudulent purchases and return their cards.
+  - Redesigned user flows to reduce friction in the most frequent use cases, improving user experience.
 
   / Tech stack: TypeScript/Vue, Webview
 ]
