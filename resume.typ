@@ -172,6 +172,22 @@
 = Professional Experience
 
 #entry(
+  title: "Solutions Architect",
+  date: "07/2026\n ~\n Present",
+  institution: "Oliver Wyman",
+  location: "Japan - Remote",
+)[
+  - Created migration plan to help a leading insurance client modernize their
+    most critical software paths from a traditional monolith application to a
+    cloud-native, microservice-based architecture.
+  - Performed a deep-dive analysis of their current architecture which
+    organized scattered data from sparse documentation to better understand
+    their current pain points and needs.
+  - Produced a new target architecture as well as a multi-step plan they can
+    follow to achieve that target over the next few years.
+]
+
+#entry(
   title: "Senior Software Engineer - Front End",
   date: "01/2026\n ~\n 05/2026",
   institution: "Paypay Card",
@@ -221,6 +237,10 @@
   / Tech stack: TypeScript, JavaScript, React, Svelte, Vue, pnpm, Vite, AWS
 ]
 
+
+// Page break to make avoid splitting this entry.
+#colbreak()
+
 #entry(
   title: "Senior Software Engineer - Front End",
   date: "10/2020\n ~\n 05/2022",
@@ -252,9 +272,6 @@
 
   / Tech stack: TypeScript, Next.js, React, RabbitMQ, AWS
 ]
-
-// Page break to make avoid splitting this entry.
-#colbreak()
 
 #entry(
   title: "Software Engineer / Senior Software Engineer",
