@@ -167,6 +167,30 @@
 = 職務経歴 // Professional Experience
 
 #entry(
+  title: "ソリューションアーキテクト",
+  date: "07/2026\n ~\n Present",
+  institution: "Oliver Wyman",
+  location: "日本 - リモート",
+)[
+  - 大手保険会社の重要なソフトウェアシステムを対象に、従来型のモノリシックアプリケーションからクラウドネイティブなマイクロサービスアーキテクチャへとモダナイズするための移行計画を策定。
+  - 現行アーキテクチャの詳細な分析を実施。限られたドキュメントに散在する情報を整理・統合し、既存システムの課題やビジネスニーズを明確化。
+  - 目指すべきターゲットアーキテクチャを設計するとともに、今後数年間で段階的に実現するための複数ステップからなる移行ロードマップを策定。
+]
+
+#entry(
+  title: "シニアソフトウェアエンジニア - フロントエンド",
+  date: "01/2026\n ~\n 05/2026",
+  institution: "Paypayカード",
+  location: "日本 - リモート",
+)[
+  - Webアプリケーションとモバイルアプリケーションを統合し、両プラットフォームに対応する単一のアプリケーションを構築するプロジェクトを主導。
+  - ユーザーが不正利用された購入を報告し、カードの返却手続きを行うための新たなユーザーフローを設計。
+  - 利用頻度の高い主要なユースケースにおける操作上の障壁を減らすため、ユーザーフローを再設計し、ユーザーエクスペリエンスを向上。
+
+    / テック: TypeScript/Vue, Webview
+]
+
+#entry(
   title: "シニアソフトウェアエンジニア - フルスタック", // Senior Software Engineer - Full Stack
   date: "2023年06月\n ~\n 2025年09月", // 06/2023 ~ 09/2025
   institution: "Revcomm Inc.",
@@ -193,6 +217,9 @@
   / テック: TypeScript, JavaScript, React, Svelte, Vue, pnpm, Vite, AWS
 ]
 
+// Page break to make avoid splitting this entry.
+#colbreak()
+
 #entry(
   title: "シニアソフトウェアエンジニア - フロントエンド", // Senior Software Engineer - Front End
   date: "2020年10月\n ~\n 2022年05月", // 08/2020 ~ 05/2022
@@ -218,9 +245,6 @@
 
   / テック: TypeScript, Next.js, React, RabbitMQ, AWS
 ]
-
-// Page break to make avoid splitting this entry.
-#colbreak()
 
 #entry(
   title: "ソフトウェアエンジニア / シニアソフトウェアエンジニア", // Software Engineer / Senior Software Engineer
